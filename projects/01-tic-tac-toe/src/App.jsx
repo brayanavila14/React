@@ -7,7 +7,7 @@ import './App.css'
 const App = () => {
   const [history, setHistory] = useState(JSON.parse(localStorage.getItem('history')) || [Array(9).fill(null)])
   const [board, setBoard] = useState(JSON.parse(localStorage.getItem('board')) || Array(9).fill(null))
-  const [isOpenModal, setIsOpenModal] = useState(JSON.parse(localStorage.getItem('isOpenModal')) || false)
+  const [isOpenModal, setIsOpenModal] = useState(JSON.parse(localStorage.getItem('isOpenModal')))
   const [isXNext, setIsXNext] = useState(JSON.parse(localStorage.getItem('isXNext')))
   const turn = isXNext ? 'X' : 'O'
 
@@ -18,17 +18,19 @@ const App = () => {
     setHistory([...history, newBoard])
     setBoard(newBoard)
     setIsXNext(!isXNext)
-    if (calculateWinner(newBoard)) {
-      confetti()
-      setIsOpenModal(true)
-    }
-    if (newBoard.every((square) => square !== null)) {
-      setIsOpenModal(true)
-    }
     localStorage.setItem('history', JSON.stringify([...history, newBoard]))
     localStorage.setItem('isXNext', JSON.stringify(!isXNext))
     localStorage.setItem('board', JSON.stringify(newBoard))
     localStorage.setItem('isOpenModal', JSON.stringify(false))
+    if (calculateWinner(newBoard)) {
+      confetti()
+      setIsOpenModal(true)
+      localStorage.setItem('isOpenModal', JSON.stringify(true))
+    }
+    if (newBoard.every((square) => square !== null)) {
+      setIsOpenModal(true)
+      localStorage.setItem('isOpenModal', JSON.stringify(true))
+    }
   }
   const calculateWinner = (board) => {
     const lines = [
