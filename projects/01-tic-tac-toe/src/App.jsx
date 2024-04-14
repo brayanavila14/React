@@ -28,7 +28,7 @@ const App = () => {
     localStorage.setItem('history', JSON.stringify([...history, newBoard]))
     localStorage.setItem('isXNext', JSON.stringify(!isXNext))
     localStorage.setItem('board', JSON.stringify(newBoard))
-    localStorage.setItem('isOpenModal', JSON.stringify(true))
+    localStorage.setItem('isOpenModal', JSON.stringify(false))
   }
   const calculateWinner = (board) => {
     const lines = [
