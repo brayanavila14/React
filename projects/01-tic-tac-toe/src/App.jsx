@@ -55,7 +55,7 @@ const App = () => {
     localStorage.setItem('isXNext', JSON.stringify(true))
     localStorage.setItem('board', JSON.stringify(Array(9).fill(null)))
     localStorage.setItem('isOpenModal', JSON.stringify(false))
-  }
+  }  
   return (
     <>
       <main className="board">
