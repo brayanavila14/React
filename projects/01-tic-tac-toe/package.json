@@ -1,7 +1,7 @@
 {
-  "name": "01-tic-tac-toe",
+  "name": "tic-tac-toe",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
