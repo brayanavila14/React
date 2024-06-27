@@ -1,0 +1,38 @@
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0;
+}
+.filters__search, .filters__sort{
+    display: flex;
+    gap: 10px;
+}   
+.filters__search label, .filters__sort label{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.filters__search input, .filters__sort select{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.filters__search button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.filters__sort select option{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
