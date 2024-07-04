@@ -17,7 +17,7 @@ Aquí hay una lista de algunos de los proyectos que he trabajado:
 
 Aquí están algunos de los recursos que he encontrado útiles en mi viaje de aprendizaje:
 
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [React Documentation](https://react.dev/learn)
 - [Repositorio de github](https://github.com/midudev/aprendiendo-react/blob/master)
 
 ## 🎉 ¡Gracias por visitar!
