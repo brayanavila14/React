@@ -1,0 +1,23 @@
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+.search input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+.search button{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    margin: auto 10px;
+    align-items: center;
+}

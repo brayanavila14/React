@@ -1,0 +1,23 @@
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px 0 0 30px; 
+}
+.card h2{
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.card p{
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
